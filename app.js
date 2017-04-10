@@ -14,9 +14,9 @@ app.get('/unfluff', function (req, res){
   request(unfluff_url, (error, response, html)=>{
     if (!error){
       var data = extractor(html);
-      res.send(data);
+      res.json(data);
     } else {
-      res.send({
+      res.json({
         error: error
       });
     }
