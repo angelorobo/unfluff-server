@@ -1,0 +1,27 @@
+{
+  "name": "unfluff-server",
+  "version": "0.1.0",
+  "dependencies": {
+    "express": "^4.15.2",
+    "unfluff": "^1.1.0"
+  },
+  "description": "A server for unfluffjs",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/suBDavis/unfluff-server.git"
+  },
+  "keywords": [
+    "unfluff"
+  ],
+  "author": "Brandon Davis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/suBDavis/unfluff-server/issues"
+  },
+  "homepage": "https://github.com/suBDavis/unfluff-server#readme"
+}
