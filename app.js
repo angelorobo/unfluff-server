@@ -29,6 +29,21 @@ app.get('/unfluff', function (req, res){
   });
 })
 
+app.get('/twitter', function (req, res) {
+  var twitter_url = req.query.url;
+  var oEmbed_url = "https://publish.twitter.com/oembed?url=";
+  request(oEmbed_url + twitter_url, (error, response, jason)=>{
+    if (!error){
+      var parsed = JSON.parse(jason);
+      res.json(parsed);
+    } else {
+      res.json({
+        error: error
+      });
+    }
+  });
+})
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
 })
