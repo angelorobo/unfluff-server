@@ -9,7 +9,7 @@ var express = require('express'),
 
 const port = 3000;
 const db_name = "reddit";
-const mongo_url = "mongodb://localhost:27017/" + db_name;
+const mongo_url = "mongodb://mongo:27017/" + db_name;
 
 
 app.use(function(req, res, next) {
