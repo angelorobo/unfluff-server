@@ -6,8 +6,11 @@ This is a VERY simple implementation of a node.js + express REST client interfac
 # Run
 
 $ git clone git@github.com:angeloh/unfluff-server.git
+
 $ cd unfluff-server
+
 $ ./build.sh
+
 $ ./run.sh
 
 # Test
