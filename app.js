@@ -6,8 +6,7 @@ var express = require('express'),
     test = require('assert'),
     app = express();
 
-const port = 3000;
-
+const port = process.env.PORT || 3000;
 
 app.use(function(req, res, next) {
   // Setup cors headers.
